@@ -209,7 +209,7 @@ read choose_sub
 choose_sub="${choose_sub:-${default_choose_sub}}"
 if [[ $choose_sub == "Y" || $choose_sub == "y" || $choose_sub == "Yes" || $choose_sub == "yes" ]]; then
 subdomain_resp=true
-printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Enter Here  "\e[1;92m EX : internetgratis ": \e[0m' $default_subdomain
+printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Enter Here  \e[1;92m" EX : internetgratis ": \e[0m' $default_subdomain
 read subdomain
 subdomain="${subdomain:-${default_subdomain}}"
 fi
